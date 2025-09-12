@@ -1,0 +1,133 @@
+/* ===== Reset & Layout general ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f9;
+  color: #333;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor principal de la App */
+#root {
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===== Header ===== */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 0;
+}
+
+
+
+/* ===== Search bar ===== */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 10px;
+}
+
+.search-container input {
+  width: 320px;
+  padding: 12px 16px;
+  border: 2px solid #dcdcdc;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.search-container input:focus {
+  border-color: #1e90ff;
+  box-shadow: 0 4px 10px rgba(30, 144, 255, 0.3);
+}
+
+.search-container button {
+  background: #1e90ff;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-container button:hover {
+  background: #187bcd;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(24, 123, 205, 0.3);
+}
+
+/* ===== Countries list ===== */
+.countries-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;     
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+/* ===== Country card ===== */
+.country-card {
+  
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #e0e0e0;
+}
+
+.country-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.country-card img {
+  width: 150px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos y textos */
+.country-card h3 {
+  color: #1e90ff;
+  margin-bottom: 1rem;
+}
+
+.country-card p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
