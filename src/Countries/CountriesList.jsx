@@ -9,12 +9,12 @@ export const CountriesList = ({ countries }) => {
   return (
     <div className="countries-list">
       {countries.map((c) => (
-        <CountryCard key={c.code} country={c} />
+        <CountryCard key={c.cca3 || c.name.common} country={c} />
       ))}
     </div>
   );
 };
 
 CountriesList.propTypes = {
-  countries: PropTypes.array.isRequired,
+  countries: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
