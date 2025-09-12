@@ -1,12 +1,120 @@
-# React + Vite
+# 🌍 CountriesApp - Buscador de Países
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web desarrollada en **React + Vite** que permite buscar información de países consumiendo la API pública [REST Countries](https://restcountries.com/).  
+El usuario puede buscar un país por nombre y visualizar la información en tarjetas con datos básicos.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Características principales
 
-## Expanding the ESLint configuration
+- 🔎 Búsqueda de países por nombre.  
+- 📄 Resultados mostrados en **tarjetas** con:  
+  - Nombre del país  
+  - Bandera  
+  - Capital  
+  - Población  
+  - Región  
+- ⚡ Manejo de **carga y errores** al consultar la API.  
+- 🎨 Interfaz limpia y responsiva.  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📂 Estructura del proyecto
+
+```bash
+src/
+├── components/
+│   ├── Header.jsx         # Encabezado con título y descripción
+│   ├── Search.jsx         # Barra de búsqueda (input + botón)
+│   ├── CountryCard.jsx    # Tarjeta individual de país
+├── Countries/
+│   ├── CountriesList.jsx  # Lista de países renderizada con CountryCard
+├── actions/
+│   ├── getCountriesByName.js # Lógica para consumir la API REST Countries
+├── App.jsx                # Componente principal con la lógica de estados
+├── App.css                # Estilos principales
+├── main.jsx               # Punto de entrada
+
+```
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- ⚛️ React 18
+
+- ⚡ Vite como bundler
+
+- 🎨 CSS3 para estilos
+
+- 🌐 Axios para llamadas HTTP
+
+- ✅ PropTypes para validación de prop
+
+---
+
+## 🚀 Instalación y ejecución
+
+- Clona este repositorio:
+
+```bash
+git clone https://github.com/asmejia28/Paises.git
+```
+
+- Accede al directorio:
+
+```bash
+cd Paises
+```
+
+- Instala las dependencias:
+
+```bash
+npm install
+```
+
+- Ejecuta la aplicación en modo desarrollo:
+
+```bash
+npm run dev
+```
+
+- Abre en tu navegador:
+
+👉 http://localhost:5173/
+
+---
+
+## 📌 API utilizada
+
+Endpoint principal:
+
+```bash
+https://restcountries.com/v3.1/name/{nombre}
+```
+
+Ejemplo:
+https://restcountries.com/v3.1/name/colombia
+
+---
+
+## 📸 Capturas de pantalla
+
+<p align="center">
+  <img src="./screenshots/home.png" width="45%" />
+  <img src="./screenshots/results.png" width="45%" />
+</p>
+
+---
+
+## 👩‍💻 Autora
+
+- Sofia Ocampo
+🌐 GitHub: asmejia28
+
+---
+
+## 📄 Licencia
+
+Este proyecto fue desarrollado con fines académicos 🎓.
+Puedes usarlo y modificarlo libremente.

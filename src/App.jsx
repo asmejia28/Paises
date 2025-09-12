@@ -28,7 +28,7 @@ export const CountryApp = () => {
   return (
     <>
       {/* Componente Header */}
-      <Header title="PaísesApp" description="Buscador de países" />
+      <Header title="🌐PaísesApp" description="Buscador de países" />
 
       {/* Componente Search */}
       <Search
