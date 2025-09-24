@@ -13,15 +13,19 @@ export const CountryApp = () => {
     const newSearch = search.trim().toLowerCase();
     if (newSearch === "") return;
 
+<<<<<<< HEAD
     setLoading(true); // empieza la carga
+=======
+    setLoading(true); 
+>>>>>>> 0336792 (Reinicializando repo y agregando proyecto)
     try {
       const result = await getCountriesByName(newSearch);
       setCountries(result);
     } catch (error) {
       console.error("Error fetching countries:", error);
-      setCountries([]); // si falla, limpiar resultados
+      setCountries([]); 
     } finally {
-      setLoading(false); // termina la carga
+      setLoading(false); 
     }
   };
 
